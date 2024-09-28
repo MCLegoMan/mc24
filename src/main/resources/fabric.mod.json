@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "mc24",
+	"version": "${version}",
+	"name": "Minecon 2024 Recreation",
+	"description": "This is a Developer Recreation of some features shown at Minecraft Live 2024",
+	"authors": [
+		"MCLegoMan"
+	],
+	"contact": {
+		"sources": "https://github.com/mclegoman/mc24"
+	},
+	"license": [
+		"LGPL-3.0-or-later"
+	],
+	"icon": "assets/mc24/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mclegoman.mc24.common.MC24"
+		],
+		"client": [
+			"com.mclegoman.mc24.client.MC24Client"
+		]
+	},
+	"mixins": [
+		"mc24.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": ">=1.21 <=1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
